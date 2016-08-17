@@ -1,5 +1,8 @@
+
+
+
 body {
-      font: 400 15px Lato, sans-serif;
+      font-family: 'Maven Pro', sans-serif !important;
       line-height: 1.8;
       color: #818181;
   }
@@ -21,7 +24,7 @@ body {
       background-color: #34caac;
       color: #fff;
       padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
+      font-family: Maven Pro, sans-serif;
   }
   .container-fluid {
       padding: 60px 50px;
@@ -115,10 +118,10 @@ body {
       line-height: 1.42857143 !important;
       letter-spacing: 4px;
       border-radius: 0;
-      font-family: Montserrat, sans-serif;
+      font-family: 'Maven Pro', sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+      color: #000000 !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #34caac !important;
@@ -162,7 +165,7 @@ body {
     }
   }
   @media screen and (max-width: 768px) {
-    .col-sm-4 {
+    .col-sm-3 {
       text-align: center;
       margin: 25px 0;
     }
