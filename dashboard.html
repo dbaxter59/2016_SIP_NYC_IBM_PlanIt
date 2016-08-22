@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="dashboard.css">
+        <script src="dashboard.js"></script>
+        <title>PlanIt Dashboard</title>
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <style>
+            #map {
+                width: 100%;
+                height: 300px;
+                background-color: grey;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <span class='bckg'></span>
+        <header>
+          <h1>
+            amanda.yao18
+          </h1>
+          <nav>
+            <ul>
+              <li>
+                <a data-title='Six Flags'>Six Flags</a>
+              </li>
+              <li>
+                <a data-title='SnowDays'>SnowDays</a>
+              </li>
+              <li>
+                <a data-title='BingBox'>BingBox</a>
+              </li>
+              <li>
+                <a data-title='GWC Grad'>GWC Grad</a>
+              </li>
+              <li>
+                <a data-title='GWC Reunion'>GWC Reunion</a>
+              </li>
+              <li>
+                <a data-title='PIZZA!'>PIZZA!</a>
+              </li>
+              <li>
+                <a href="new_plan.html">Make a Plan</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main>
+          <div class='title'>
+            <h2>Plans</h2>
+            <a href='#' title='Profil'>
+              Hello amanda.yao18 !
+            </a>
+          </div>
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                var mapDiv = document.getElementById('map');
+                
+                var map = new google.maps.Map(mapDiv, {
+                    center: {lat: 40.137074, lng: -74.440230},
+                    zoom: 13
+                    });
+                    var marker = new google.maps.Marker({
+                        position: {lat: 40.137074, lng: -74.440230},
+                        map: map,
+                        title: 'Six Flags: Great Adventure',
+                        icon: 'http://i.imgur.com/yKn6Wjv.png'
+                    });
+                }
+            </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtpjKZQOjP9C7YQM6UbH4Mf4hZjeJUkCQ&callback=initMap">
+        </script>
+          <article class='larg'>
+            <h2>Date</h2>
+            <h3>August 21, 2016</h3>
+            <h2>Location</h2>
+            <h3>1 Six Flags Blvd, Jackson, NJ 08527</h3>
+            <h2>Time</h2>
+            <h3>9:00 AM - 5:00 PM</h3>
+            <h2>Friends</h2>
+            <div class="blogroll"> 
+                <img src="http://i.imgur.com/0GuRny6.jpg">
+                <img src="http://i.imgur.com/zCopzOx.jpg">
+                <img src="http://i.imgur.com/P6uLf1c.jpg">
+                <img src="http://i.imgur.com/LURvCi1.jpg">
+                <img src="http://i.imgur.com/BbeRiMI.jpg">
+                <img src="http://i.imgur.com/QwOyn9U.jpg">
+                <img src="http://i.imgur.com/JA55lhj.jpg">
+                <img src="http://i.imgur.com/CLrV3Xv.jpg">
+                <img src="http://i.imgur.com/QVBHMke.jpg">
+                <img src="http://i.imgur.com/xMg3uZq.jpg">
+                <img src="http://i.imgur.com/9UJpNZ6.jpg">
+                <img src="http://i.imgur.com/57rrBzp.jpg">
+                <img src="http://i.imgur.com/oTXciJF.jpg">
+                <img src="http://i.imgur.com/SFD9zAu.jpg">
+                <img src="http://i.imgur.com/E5uRaj5.jpg">
+                <img src="http://i.imgur.com/w2iTNNR.jpg">
+                <img src="http://i.imgur.com/WLenoBQ.jpg">
+                <img src="http://i.imgur.com/yHhbLV3.jpg">
+                <img src="http://i.imgur.com/8zdnED8.jpg">
+            </div>
+          </article>
+        </main>
+        
+    </body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>PlanIt</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="planit.css">
@@ -21,36 +21,38 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">    <img src="logo.png" alt="logo" style="width:50px;height:50px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#services">THE TEAM</a></li>
+        <li><a href="#portfolio">USER FEEDBACK</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <li><a href="planit_login.html">LOGIN // SIGN UP</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>PlanIt</h1>
-  <p>We specialize in group planning in the digital age</p>
-  <form class="form-inline">
-    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-    <button type="button" class="btn btn-danger">Sign up</button>
-  </form>
+    <div>
+      <h1>PlanIt</h1>
+      <p>We specialize in group planning in the digital age</p>
+      <FORM class="btn-lg" METHOD="LINK" ACTION="planit_login.html">
+        <INPUT id="start" TYPE="submit" VALUE="Get Started">
+      </FORM>
+    </div>
 </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
   <div class="row">
-    <div >
+    <div>
       <h2>About PlanIt</h2><br>
       <h4>Group chats just don't work for making plans anymore and we expect better. That's why we created PlanIt so that your group of friends can easily choose a fun activity for the weekend and keep all the details in one place.</h4><br>
-      <br><button class="btn btn-default btn-lg">Get Started!</button>
+      <div id="logoPic">
+      <a class="navbar-brand" href="#myPage"><img src="logo.png" alt="logo"></a>
+      </div>
     </div>
   </div>
 </div>
@@ -66,7 +68,7 @@
     <div class="col-sm-3">
     <img src="diana_portrait.jpg" alt="Diana" style="width:150px;height:150px;border-radius:100px;">
       <h4>Diana</h4>
-      <p>16 // Hoboken, NJ</p>
+      <p>15 // Hoboken, NJ</p>
     </div>
     <div class="col-sm-3">
     <img src="amanda_portrait.jpg" alt="Amanda" style="width:150px;height:150px;border-radius:100px;">
@@ -80,7 +82,7 @@
     </div>
     <div class="col-sm-3">
     <img src="amina_portrait.jpg" alt="Amina" style="width:150px;height:150px;border-radius:100px;">
-      <h4 style="color:#303030;">Amina</h4>
+      <h4>Amina</h4>
       <p>16 // Brooklyn, NY</p>
     </div>
   </div>
@@ -88,10 +90,10 @@
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center">
   
   
-  <h2>What our customers say</h2>
+  <h2>What our users say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -127,13 +129,13 @@
 
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
       <p><span class="glyphicon glyphicon-map-marker"></span> New York, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 917-123-4567</p>
       <p><span class="glyphicon glyphicon-envelope"></span> customerservice@planit.com</p>
     </div>
     <div class="col-sm-7 slideanim">
@@ -166,12 +168,15 @@ var mapProp = {
   center:myCenter,
   zoom:14,
   scrollwheel:false,
-  draggable:false,
+  draggable:true,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
+  
+
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({
   position:myCenter,
+  title: '335 Madison Avenue // Where PlanIt was born'
   });
 marker.setMap(map);
 }
