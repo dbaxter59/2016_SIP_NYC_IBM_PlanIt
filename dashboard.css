@@ -30,7 +30,7 @@ a {
   color: #b3b3b3;
   text-decoration: none;
 }
-.bckg {
+#planTabs {
   background-color: #383B42;
   box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
   width: 200px;

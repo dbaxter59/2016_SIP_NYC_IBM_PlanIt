@@ -6,8 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <link rel="stylesheet" href="new_plan.css">
-        <script src="new_plan.js"></script>
-        <link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css'/>
+        <script src="dashboard.js"></script>
         <title>New PlanIt</title>
     </head>
         
@@ -21,45 +20,45 @@
                         <label for="name">PlanIt Name</label>
                         <span class="ss-icon">check</span>
                   </div>
-
-                  <div class="field email-box">
-                        <input type="text" id="email" placeholder="Where Are We Going?"/>
-                        <label for="email">Location</label>
-                        <span class="ss-icon">check</span>
-                  </div>
                   
                   <div class="field email-box">
-                        <input type="text" id="date" placeholder="MM/DD/YYYY"/>
+                        <input type="text" id="userInput" placeholder="MM/DD/YYYY"/>
                         <label for="email">Date</label>
                         <span class="ss-icon">check</span>
                   </div>
                   
                   <div class="field email-box">
-                        <input type="text" id="time" placeholder="00:00 - 00:00"/>
+                        <input type="text" id="userInput" placeholder="Where Are We Going?"/>
+                        <label for="email">Location</label>
+                        <span class="ss-icon">check</span>
+                  </div>
+                  
+                  <div class="field email-box">
+                        <input type="text" id="userInput" placeholder="00:00 - 00:00"/>
                         <label for="email">Time</label>
                         <span class="ss-icon">check</span>
                   </div>
                   
                   <div class="field email-box">
-                        <input type="text" id="date" placeholder="Who Do You Want to Bring?"/>
+                        <input type="text" id="userInput" placeholder="Who Do You Want to Bring?"/>
                         <label for="email">Friends</label>
                         <span class="ss-icon">check</span>
                   </div>
                   
                   <div class="field msg-box">
-                        <textarea id="msg" rows="4" placeholder="What Are We Doing?"/></textarea>
+                        <textarea id="userInput" rows="4" placeholder="What Are We Doing?"/></textarea>
                         <label for="msg">Description</label>
                         <span class="ss-icon">check</span>
                   </div>
                   
                   <div class="field email-box">
-                        <input type="text" id="date" placeholder="MM/DD/YYYY"/>
+                        <input type="text" id="userInput" placeholder="MM/DD/YYYY"/>
                         <label for="email">RSVP By</label>
                         <span class="ss-icon">check</span>
                   </div>
 
-                  <FORM class="button" METHOD="LINK" ACTION="dashboard.html">
-                      <INPUT id="start" TYPE="submit" VALUE="Create">
+                  <FORM class="button" >
+                      <INPUT id="start" TYPE="submit" VALUE="Create" onclick="getInput();" href="dashboard.html">
                   </FORM>
               </form>
             </section

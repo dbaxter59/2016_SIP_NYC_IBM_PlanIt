@@ -40,3 +40,13 @@ $('#hire .field:nth-child(2) input').blur(function () {
         }
     });
 });
+
+function getInput() {
+    var inputname = document.getElementById("name").value;
+    window.sessionStorage.setItem("name",inputname);
+    console.log(window.sessionStorage.getItem("name"));
+
+}
+
+
+
